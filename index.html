@@ -1,64 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería Artesanal</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Galería Artesanal</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-    <div class="container">
-        <aside class="sidebar">
-            <div class="logo-section">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M9 17H7A5 5 0 017 7h2m6 0h2a5 5 0 010 10h-2M8 12h8" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <h1>GALERÍA</h1>
-                <p class="subtitle">ARTESANAL</p>
-            </div>
+  <!-- Background -->
+  <div class="background"></div>
 
-            <nav class="menu">
-                <a href="#"><i class="fa-solid fa-vial-circle-check"></i> COLECCIÓN ACTUAL</a>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i> TIENDA EN LÍNEA</a>
-                <a href="#"><i class="fa-regular fa-calendar-days"></i> PRÓXIMOS EVENTOS</a>
-                <a href="#"><i class="fa-solid fa-users-line"></i> SOBRE LA GALERÍA</a>
-                <a href="#"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i> CONTÁCTANOS</a>
-            </nav>
+  <main class="container">
 
-            <div class="sidebar-footer">
-                <p class="script-text">Apoya el arte local</p>
-                <i class="fa-solid fa-heart heart-icon"></i>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                </div>
-            </div>
-        </aside>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-        <main class="main-content">
-            <header class="top-banner">
-                PIEZAS ÚNICAS • HECHAS A MANO • CON ALMA
-            </header>
+      <div>
 
-            <section class="hero-text">
-                <h2 class="main-title">Arte hecho <br> a mano.</h2>
-                <h3 class="tagline">Historias que perduran.</h3>
-                <div class="divider"></div>
-                <p class="description">
-                    Piezas únicas creadas por artesanos<br>
-                    locales con pasión, tradición y alma.
-                </p>
-                <a href="#" class="cta-button">CONOCE LA COLECCIÓN ACTUAL <span>→</span></a>
-            </section>
-        </main>
-    </div>
+        <!-- Logo -->
+        <div class="logo">
+
+          <img src="src/logo.png" alt="Logo Galería Artesanal">
+
+          <h1>GALERÍA</h1>
+
+          <span>ARTESANAL</span>
+
+          <div class="divider"></div>
+
+        </div>
+
+        <!-- Menu -->
+        <nav class="menu">
+
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>TIKTOK</span>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>INSTAGRAM</span>
+          </a>
+
+          <a href="https://wa.me/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-landmark"></i>
+            <span>SOBRE LA GALERÍA</span>
+          </a>
+
+        </nav>
+
+      </div>
+
+      <!-- Bottom Socials -->
+      <div class="bottom">
+
+        <div class="socials">
+
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a href="https://wa.me/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <h2>
+        Arte hecho <br>
+        a mano.
+      </h2>
+
+      <div class="hero-line"></div>
+
+      <!-- CTA -->
+      <div class="cta">
+
+        <a href="https://drive.google.com/file/d/1d99kbZji4_5EqLGbgkI4rjc4PU8SVx9_/view?usp=sharing"
+          target="_blank">
+
+          CONOCE LA COLECCIÓN ACTUAL
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
+
 </html>
