@@ -1,5 +1,5 @@
 // ===============================
-// FADE IN
+// PAGE FADE IN
 // ===============================
 
 window.addEventListener("load", () => {
@@ -9,12 +9,12 @@ window.addEventListener("load", () => {
 });
 
 // ===============================
-// SOFT HOVER EFFECTS
+// MENU INTERACTION
 // ===============================
 
-const links = document.querySelectorAll(".menu a");
+const menuLinks = document.querySelectorAll(".menu a");
 
-links.forEach(link => {
+menuLinks.forEach(link => {
 
   link.addEventListener("mouseenter", () => {
 
@@ -25,19 +25,19 @@ links.forEach(link => {
 });
 
 // ===============================
-// BUTTON MICRO INTERACTION
+// BUTTON EFFECT
 // ===============================
 
 const button = document.querySelector(".catalog-btn");
 
 button.addEventListener("mouseenter", () => {
 
-  button.style.letterSpacing = "0.5px";
+  button.style.transform = "translateY(-4px)";
 
 });
 
 button.addEventListener("mouseleave", () => {
 
-  button.style.letterSpacing = "0px";
+  button.style.transform = "translateY(0px)";
 
 });
