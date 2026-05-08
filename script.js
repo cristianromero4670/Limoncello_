@@ -1,20 +1,20 @@
 // ===============================
-// SMOOTH FADE EFFECT
+// FADE IN
 // ===============================
 
 window.addEventListener("load", () => {
 
-  document.body.classList.add("loaded");
+  document.body.style.opacity = "1";
 
 });
 
 // ===============================
-// BUTTON HOVER GLOW
+// SOFT HOVER EFFECTS
 // ===============================
 
-const menuLinks = document.querySelectorAll(".menu a");
+const links = document.querySelectorAll(".menu a");
 
-menuLinks.forEach(link => {
+links.forEach(link => {
 
   link.addEventListener("mouseenter", () => {
 
@@ -25,35 +25,19 @@ menuLinks.forEach(link => {
 });
 
 // ===============================
-// PARALLAX BACKGROUND
+// BUTTON MICRO INTERACTION
 // ===============================
 
-const background = document.querySelector(".background");
+const button = document.querySelector(".catalog-btn");
 
-window.addEventListener("mousemove", (e) => {
+button.addEventListener("mouseenter", () => {
 
-  const x = (window.innerWidth / 2 - e.clientX) / 90;
-
-  const y = (window.innerHeight / 2 - e.clientY) / 90;
-
-  background.style.transform = `scale(1.03) translate(${x}px, ${y}px)`;
+  button.style.letterSpacing = "0.5px";
 
 });
 
-// ===============================
-// SOFT BUTTON INTERACTION
-// ===============================
+button.addEventListener("mouseleave", () => {
 
-const ctaButton = document.querySelector(".cta a");
-
-ctaButton.addEventListener("mouseenter", () => {
-
-  ctaButton.style.letterSpacing = "2.5px";
-
-});
-
-ctaButton.addEventListener("mouseleave", () => {
-
-  ctaButton.style.letterSpacing = "2px";
+  button.style.letterSpacing = "0px";
 
 });
