@@ -460,7 +460,6 @@ body{
     flex-direction:column;
   }
 
-  /* HERO */
   .hero{
 
     order:1;
@@ -481,11 +480,6 @@ body{
   .hero-content{
 
     width:100%;
-  }
-
-  .hero-logo{
-
-    justify-content:flex-start;
   }
 
   .hero-logo img{
@@ -514,7 +508,6 @@ body{
     letter-spacing:2px;
   }
 
-  /* SIDEBAR */
   .sidebar{
 
     order:2;
@@ -544,21 +537,9 @@ body{
     display:none;
   }
 
-  .menu{
-
-    gap:4px;
-  }
-
   .menu a{
 
     padding:20px 4px;
-  }
-
-  .menu a span{
-
-    font-size:12px;
-
-    letter-spacing:2px;
   }
 
   .socials{
