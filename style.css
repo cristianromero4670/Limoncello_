@@ -519,7 +519,7 @@ body {
         rgba(20, 10, 4, .40),
         rgba(20, 10, 4, .58)
       ),
-      url("src/background_mobile.png");
+      url("src/background.PNG");
 
     background-size: cover;
     background-position: center center;
