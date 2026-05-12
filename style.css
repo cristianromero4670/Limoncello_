@@ -65,7 +65,7 @@ body {
       rgba(20, 10, 4, .35),
       rgba(20, 10, 4, .55)
     ),
-    url("src/background.jpg");
+    url("src/background_pc.png");
 
   background-size: cover;
   background-position: center center;
@@ -516,6 +516,20 @@ body {
     height: auto;
 
     flex-direction: column;
+  }
+
+  /* Background mobile */
+  .background {
+
+    background:
+      linear-gradient(
+        rgba(20, 10, 4, .35),
+        rgba(20, 10, 4, .55)
+      ),
+      url("src/background_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
   }
 
   .hero {
