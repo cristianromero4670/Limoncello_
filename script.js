@@ -1,15 +1,4 @@
 // ===============================
-// DISABLE MOBILE PARALLAX
-// ===============================
-
-window.addEventListener("scroll", () => {
-
-  const background = document.querySelector(".background");
-
-  background.style.transform = "scale(1.03)";
-});
-
-// ===============================
 // BUTTON INTERACTION
 // ===============================
 
