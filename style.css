@@ -333,7 +333,14 @@ body {
   .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra los hijos dentro del contenido */
+    width: 100%;
+  }
+
+  .hero-logo {
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    width: 100%;
   }
 
   .hero-logo img {
@@ -342,7 +349,7 @@ body {
   }
 
   .hero-line {
-    margin: 20px auto;
+    margin: 20px auto; /* Asegura el centrado de la línea divisoria */
   }
 
   .catalog-btn {
@@ -360,11 +367,11 @@ body {
     border-left: none;
     border-top: 1px solid rgba(255, 220, 180, 0.15);
     padding: 20px 24px 30px;
-    margin-top: auto; /* Se pega al fondo si hay poco contenido */
+    margin-top: auto; 
   }
 
   .sidebar .logo {
-    display: none; /* Quitamos logo repetido */
+    display: none; 
   }
 
   .menu {
@@ -375,7 +382,6 @@ body {
   .menu a {
     padding: 20px 5px;
     border-top: 1px solid rgba(255, 220, 180, 0.08);
-    /* Forzamos visibilidad para JS */
     opacity: 1 !important;
     transform: none !important;
   }
@@ -391,7 +397,6 @@ body {
     gap: 15px;
   }
 
-  /* Brillos ambientales reducidos para móvil */
   .ambient-1 {
     width: 180px;
     height: 180px;
